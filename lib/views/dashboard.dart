@@ -83,96 +83,96 @@ class DashboardPageState extends State<DashboardPage> with SingleTickerProviderS
                         wrapCrossAlignment: WrapCrossAlignment.start,
                         contentPadding: false,
                         children: [
-                          MyFlexItem(
-                            sizes: "lg-3",
-                            child: MyCard(
-                              shadow: MyShadow(elevation: 0.5),
-                              child: Column(
-                                children: [
-                                  MyContainer(
-                                    color: contentTheme.warning.withAlpha(28),
-                                    child: Row(
-                                      children: [
-                                        Expanded(
-                                          child: Row(
-                                            children: [
-                                              Icon(
-                                                LucideIcons.alertTriangle,
-                                                size: 20,
-                                                color: contentTheme.warning,
-                                              ),
-                                              MySpacing.width(8),
-                                              Expanded(
-                                                child: MyText.bodyMedium(
-                                                  "Your free trial expired in 21 days.",
-                                                  overflow: TextOverflow.ellipsis,
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                        ),
-                                        MyText.bodyMedium(
-                                          "Upgrade",
-                                          fontWeight: 600,
-                                          decoration: TextDecoration.underline,
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                  MySpacing.height(16),
-                                  MyFlex(
-                                    contentPadding: false,
-                                    children: [
-                                      MyFlexItem(
-                                        sizes: "lg-6",
-                                        child: MyContainer(
-                                          height: 200,
-                                          child: Column(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Expanded(
-                                                child: RichText(
-                                                  text: TextSpan(
-                                                    text: 'Upgrade Your Plan From a ',
-                                                    style: MyTextStyle.bodyMedium(fontSize: 16),
-                                                    children: const <TextSpan>[
-                                                      TextSpan(text: 'Free trial,', style: TextStyle(fontWeight: FontWeight.bold)),
-                                                      TextSpan(text: "to 'Premium plan'"),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                              MySpacing.height(16),
-                                              MyButton(
-                                                onPressed: () {},
-                                                elevation: 0,
-                                                padding: MySpacing.xy(8, 12),
-                                                backgroundColor: contentTheme.primary,
-                                                borderRadiusAll: AppStyle.buttonRadius.medium,
-                                                child: MyText.bodySmall(
-                                                  "Upgrade Account!",
-                                                  fontSize: 12,
-                                                  color: contentTheme.onPrimary,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                      MyFlexItem(
-                                        sizes: "lg-6",
-                                        child: Image.asset(
-                                          Images.dashboard[0],
-                                          height: 205,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
+                          // MyFlexItem(
+                          //   sizes: "lg-3",
+                          //   child: MyCard(
+                          //     shadow: MyShadow(elevation: 0.5),
+                          //     child: Column(
+                          //       children: [
+                          //         MyContainer(
+                          //           color: contentTheme.warning.withAlpha(28),
+                          //           child: Row(
+                          //             children: [
+                          //               Expanded(
+                          //                 child: Row(
+                          //                   children: [
+                          //                     Icon(
+                          //                       LucideIcons.alertTriangle,
+                          //                       size: 20,
+                          //                       color: contentTheme.warning,
+                          //                     ),
+                          //                     MySpacing.width(8),
+                          //                     Expanded(
+                          //                       child: MyText.bodyMedium(
+                          //                         "Your free trial expired in 21 days.",
+                          //                         overflow: TextOverflow.ellipsis,
+                          //                       ),
+                          //                     )
+                          //                   ],
+                          //                 ),
+                          //               ),
+                          //               MyText.bodyMedium(
+                          //                 "Upgrade",
+                          //                 fontWeight: 600,
+                          //                 decoration: TextDecoration.underline,
+                          //               )
+                          //             ],
+                          //           ),
+                          //         ),
+                          //         MySpacing.height(16),
+                          //         MyFlex(
+                          //           contentPadding: false,
+                          //           children: [
+                          //             MyFlexItem(
+                          //               sizes: "lg-6",
+                          //               child: MyContainer(
+                          //                 height: 200,
+                          //                 child: Column(
+                          //                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          //                   crossAxisAlignment: CrossAxisAlignment.start,
+                          //                   children: [
+                          //                     Expanded(
+                          //                       child: RichText(
+                          //                         text: TextSpan(
+                          //                           text: 'Upgrade Your Plan From a ',
+                          //                           style: MyTextStyle.bodyMedium(fontSize: 16),
+                          //                           children: const <TextSpan>[
+                          //                             TextSpan(text: 'Free trial,', style: TextStyle(fontWeight: FontWeight.bold)),
+                          //                             TextSpan(text: "to 'Premium plan'"),
+                          //                           ],
+                          //                         ),
+                          //                       ),
+                          //                     ),
+                          //                     MySpacing.height(16),
+                          //                     MyButton(
+                          //                       onPressed: () {},
+                          //                       elevation: 0,
+                          //                       padding: MySpacing.xy(8, 12),
+                          //                       backgroundColor: contentTheme.primary,
+                          //                       borderRadiusAll: AppStyle.buttonRadius.medium,
+                          //                       child: MyText.bodySmall(
+                          //                         "Upgrade Account!",
+                          //                         fontSize: 12,
+                          //                         color: contentTheme.onPrimary,
+                          //                       ),
+                          //                     ),
+                          //                   ],
+                          //                 ),
+                          //               ),
+                          //             ),
+                          //             MyFlexItem(
+                          //               sizes: "lg-6",
+                          //               child: Image.asset(
+                          //                 Images.dashboard[0],
+                          //                 height: 205,
+                          //               ),
+                          //             ),
+                          //           ],
+                          //         ),
+                          //       ],
+                          //     ),
+                          //   ),
+                          // ),
                           MyFlexItem(
                             sizes: "lg-5",
                             child: MyFlex(

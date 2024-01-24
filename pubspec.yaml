@@ -43,7 +43,7 @@ dependencies:
   url_launcher: ^6.1.11
   google_maps_flutter: ^2.2.8
   syncfusion_flutter_charts: ^23.1.42
-  flutter_blurhash: ^0.7.0
+  #flutter_blurhash: ^0.7.0
   feather_icons: ^1.2.0
   url_strategy: ^0.2.0
   intl: ^0.18.0

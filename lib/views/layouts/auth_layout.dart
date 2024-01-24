@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_blurhash/flutter_blurhash.dart';
+
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:webkit/controller/layouts/auth_layout_controller.dart';
 import 'package:webkit/helpers/theme/admin_theme.dart';
@@ -54,7 +54,8 @@ class AuthLayout extends StatelessWidget {
             const Center(
               child: Opacity(
                   opacity: 0.8,
-                  child: BlurHash(hash: "LDLz?TMI00%N00I=M{%M00Rj~qRP")),
+                  //child: BlurHash(hash: "LDLz?TMI00%N00I=M{%M00Rj~qRP")
+                  ),
             ),
             Container(
               margin: MySpacing.top(100),
